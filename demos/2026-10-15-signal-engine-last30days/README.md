@@ -36,7 +36,7 @@ git clone --depth 1 https://github.com/mvanhorn/last30days-skill.git
 env -u LAST30DAYS_HOST python3 last30days-skill/skills/last30days/scripts/last30days.py "<topic>" --search reddit,hackernews,polymarket,github
 ```
 
-On 2026-10-15 that command ran here against the number 1 title. It exited 0. Hacker News returned stories. Reddit returned HTTP 403. Polymarket and GitHub returned nothing for that query. `--quick` is optional and was used for that check.
+On 2026-10-15 a separate checkout of last30days ran here on the number 1 title. That check added `--quick` to the command above. It exited 0. Hacker News returned 4 stories. Reddit returned HTTP 403. Polymarket and GitHub returned nothing for that query. With `last30days_checkout` empty, `run_deepdive.py` only prints the command and exits 0.
 
 ## What this does not do
 
