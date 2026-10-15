@@ -1,0 +1,13 @@
+{
+  "lookback_hours": 24,
+  "per_source_cap": 20,
+  "keywords": ["ai", "llm", "agent", "model", "claude", "gpt", "grok", "cursor", "openai", "release"],
+  "github_repos": ["vercel/ai", "anthropics/anthropic-sdk-python", "openai/openai-python"],
+  "youtube_channels": [
+    {"id": "UCMwVTLZIRRUyyVrkjDpn4pA", "label": "Cole Medin"},
+    {"id": "UC_x36zCEGilGpB1m-V4gmjg", "label": "IndyDevDan"},
+    {"id": "UCLKPca3kwwd-B59HNr-_lvA", "label": "AI Engineer"},
+    {"id": "UCswG6FSbgZjbWtdf_hMLaow", "label": "Matt Pocock"}
+  ],
+  "last30days_checkout": ""
+}

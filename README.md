@@ -4,4 +4,4 @@ Small, runnable demos of new AI tools and features. Each demo lives in `demos/YY
 
 ## Index
 
-_No demos yet._
+- [Signal engine](demos/2026-10-15-signal-engine-last30days/)
