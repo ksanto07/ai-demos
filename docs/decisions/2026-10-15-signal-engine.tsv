@@ -1,0 +1,10 @@
+ts	phase	decision	why	evidence	result
+2026-10-15T16:45:05Z	start	opened the signal-engine run on an empty repo	the task is a new demo plus a decision trail Kenneth can read	branch cursor/signal-engine-last30days-b591	log created
+2026-10-15T16:45:05Z	design	picked candidate 2 as the base	the judge and I agreed. It writes a digest we can commit and a dead feed does not wipe the others	/tmp/arena-signal/candidate-2/DESIGN.md	base chosen
+2026-10-15T16:45:05Z	design	grafted a scrubbed child env from candidate 1	copying the parent env would keep LAST30DAYS_HOST and paid keys	/tmp/arena-signal/candidate-1/DESIGN.md	graft accepted
+2026-10-15T16:45:05Z	design	rejected candidate 3 tape and score merge	that is a second ranking scheme and more files than this demo needs	/tmp/arena-signal/candidate-3/DESIGN.md	rejected
+2026-10-15T16:45:05Z	probe	checked live 24h volume before choosing repos	vercel/ai and anthropics/anthropic-sdk-python had releases. Four YouTube feeds had videos. HN had keyword hits	shell probe 2026-10-15T16:44:34Z	enough items for a top 5
+2026-10-15T17:07:41Z	implement	wrote the digest CLI and seven behavior tests	one Hit type, cheap filters in Basket.merge, Grok only when the key is set	demos/2026-10-15-signal-engine-last30days/test_engine.py	7 tests OK
+2026-10-15T17:07:41Z	verify	ran the digest against live GitHub, HN, and YouTube	no XAI_API_KEY, so the keyword scorer wrote the page	demos/2026-10-15-signal-engine-last30days/digests/2026-10-15.md	5 items, exit 0
+2026-10-15T17:07:41Z	verify	ran last30days on the number 1 title with free sources	LAST30DAYS_HOST was unset. Reddit returned 403. HN returned 4 stories	docs/recordings/2026-10-15-signal-engine.mp4	exit 0
+2026-10-15T17:07:41Z	evidence	recorded the terminal on the desktop	the video shows the tests, the digest, the deep-dive command, and the last30days footer	docs/screenshots/2026-10-15-signal-engine-digest.png	70s mp4
