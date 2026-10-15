@@ -68,9 +68,18 @@ def _bounded(
     cap: int,
     source: Source,
 ) -> Cut:
-    fresh = [hit for hit in hits if within_window(hit.published, now, lookback_hours)]
+    fresh: list[Hit] = []
+    old: list[Hit] = []
+    future: list[Hit] = []
+    for hit in hits:
+        if hit.published > now:
+            future.append(hit)
+        elif within_window(hit.published, now, lookback_hours):
+            fresh.append(hit)
+        else:
+            old.append(hit)
     fresh.sort(key=lambda hit: hit.published, reverse=True)
-    return Cut(source, tuple(fresh[:cap]))
+    return Cut(source, tuple(fresh[:cap]), tuple(old), tuple(future), len(hits))
 
 
 def _empty(source: Source, label: str, exc: BaseException) -> Cut:

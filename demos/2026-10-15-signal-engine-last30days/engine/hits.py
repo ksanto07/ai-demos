@@ -22,6 +22,9 @@ class Hit:
 class Cut:
     source: Source
     hits: tuple[Hit, ...]
+    dropped_old: tuple[Hit, ...] = ()
+    dropped_future: tuple[Hit, ...] = ()
+    fetched: int = 0
 
 
 def within_window(published: datetime, now: datetime, lookback_hours: int) -> bool:
