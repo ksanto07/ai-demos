@@ -18,7 +18,7 @@ from render_html import main as render_main
 from run_deepdive import main as deepdive_main
 from run_digest import main as digest_main
 
-_TRACE_HOLD = 2.5
+_TRACE_HOLD = 3.0
 _PAGE_HOLD = 3.0
 _RESULT_HOLD = 3.0
 
@@ -57,14 +57,14 @@ def _chrome(html: Path) -> subprocess.Popen[bytes]:
     )
 
 
-def _page_visible(day: str) -> bool:
+def _page_ids(day: str) -> list[str]:
     found = subprocess.run(
         ["xdotool", "search", "--name", f"Signal {day}"],
         check=False,
         capture_output=True,
         text=True,
     )
-    return found.stdout.strip() != ""
+    return [line for line in found.stdout.splitlines() if line.strip()]
 
 
 def _stop(proc: subprocess.Popen[bytes]) -> None:
@@ -96,7 +96,7 @@ def main() -> int:
     _mark("page-open")
     chrome = _chrome(demo / "digests" / f"{day}.html")
     deadline = time.time() + 8
-    while time.time() < deadline and not _page_visible(day):
+    while time.time() < deadline and not _page_ids(day):
         time.sleep(0.05)
     _mark("page")
     time.sleep(_PAGE_HOLD)
