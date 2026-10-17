@@ -7,10 +7,10 @@ From this directory.
 ```bash
 cd demos/2026-10-15-signal-engine-last30days
 python3 -m unittest test_engine.py
-python3 run_digest.py
-python3 render_html.py
-python3 run_deepdive.py
+python3 run_e2e.py
 ```
+
+`python3 run_e2e.py` is the one live command. It runs the digest, opens the rendered HTML page, then last30days on item 1. The three steps below are the same work, split apart.
 
 Copy `.env.example` to `.env` and set `XAI_API_KEY` when you want the Grok keep/drop pass. This recording has no key. The keyword scorer writes the digest and prints `keyword scorer (no Grok key)`.
 
