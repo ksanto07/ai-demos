@@ -12,7 +12,7 @@ Install the CLI once, away from the recording.
 npm install -g --prefix "$HOME/.local" impeccable@4.7.0
 ```
 
-From this folder, install Electron and start the window.
+The page is set in Liberation Sans. On Debian or Ubuntu, that face is in the `fonts-liberation` package. From this folder, install Electron and start the window.
 
 ```bash
 npm install
@@ -76,5 +76,6 @@ The recording is 72 seconds. Captions are in the picture. There is no voice trac
 - A file scan does not report these two rules. They need the open window.
 - The demo does not set `text-wrap: balance`, so the heading advisory remains.
 - On Linux the window can need `--no-sandbox` and `--disable-gpu`.
+- Do not dock DevTools on the window. A docked pane changes the viewport and can move the line breaks.
 - This take does not cover NW.js, CEF, or WebView2.
 - Both findings are advisory. They do not change the exit code.
