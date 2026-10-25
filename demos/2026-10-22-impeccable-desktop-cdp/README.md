@@ -54,6 +54,16 @@ After the declaration, the paragraph's second line reads "leaves one." The headi
 
 The committed `page/demo.css` is the page before the fix. Remove the declaration if you applied it and you want that page back.
 
+## Watch the take
+
+The recording is 72 seconds. Captions are in the picture. There is no voice track.
+
+![First scan. The terminal lists unbalanced-heading and straggler, two advisory notes.](screenshots/scan-before.jpg)
+
+![Second scan. The terminal lists one advisory note, unbalanced-heading. The paragraph now ends on leaves one.](screenshots/scan-after.jpg)
+
+[recording.mp4](recording.mp4)
+
 ## Sources
 
 - [Impeccable CLI 4.7.0](https://github.com/pbakaus/impeccable/releases/tag/cli-v4.7.0) adds `--cdp` for a local DevTools port and ships detector engine 0.1.16.
