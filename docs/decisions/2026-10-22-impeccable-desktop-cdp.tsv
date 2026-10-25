@@ -1,0 +1,6 @@
+ts	phase	decision	why	evidence	result
+2026-10-25T14:32:00Z	preflight	Installed impeccable 4.7.0 and confirmed detect --cdp	The demo stops if that command is missing	~/.local/bin/impeccable	version 4.7.0, help lists --cdp
+2026-10-25T14:34:00Z	preflight	Locked the heading and paragraph copy on a live Electron window	Those strings produced both advisories and a cool background avoided cream-palette	/tmp/cdp-probe/index.html	unbalanced-heading and straggler, exit 0
+2026-10-25T14:36:00Z	design	Built the three-file Electron shell from the finished sketch	The other sketch wrote no files before the page had to match the measured copy	/tmp/arena-cdp/candidate-2/module-map.md	app matches that map
+2026-10-25T14:38:00Z	verify	Scanned the Ledger window, then added text-wrap pretty and scanned again	The fix has to drop only straggler	demos/2026-10-22-impeccable-desktop-cdp/page/demo.css	straggler gone, heading remains, source restored
+2026-10-25T14:39:00Z	product	Wrote PRODUCT.md from the brief and labeled the inferences	No question tool was available to confirm the interview	demos/2026-10-22-impeccable-desktop-cdp/PRODUCT.md	assumptions marked in the file

@@ -1,0 +1,21 @@
+body {
+  margin: 48px;
+  background: #e7eef2;
+  color: #142028;
+  font-family: "Liberation Sans", sans-serif;
+}
+
+#h1 {
+  width: 520px;
+  font-size: 40px;
+  line-height: 1.15;
+  font-weight: 650;
+  margin: 0 0 24px;
+}
+
+p {
+  width: 58ch;
+  font-size: 18px;
+  line-height: 1.45;
+  margin: 0;
+}
