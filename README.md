@@ -4,4 +4,4 @@ Small, runnable demos of new AI tools and features. Each demo lives in `demos/YY
 
 ## Index
 
-_No demos yet._
+- [Impeccable desktop CDP](demos/2026-10-22-impeccable-desktop-cdp/)
