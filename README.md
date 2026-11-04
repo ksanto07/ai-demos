@@ -5,3 +5,4 @@ Small, runnable demos of new AI tools and features. Each demo lives in `demos/YY
 ## Index
 
 - [Impeccable desktop CDP](demos/2026-10-22-impeccable-desktop-cdp/)
+- [Vercel doctor](demos/2026-11-04-vercel-doctor/)

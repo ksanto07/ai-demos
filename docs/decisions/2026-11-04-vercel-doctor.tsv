@@ -1,0 +1,8 @@
+ts	phase	decision	why	evidence	result
+2026-11-04T15:39:00Z	preflight	Installed vercel@65.11.0 under $HOME/.local and confirmed doctor exists	The demo stops if that command is missing	$HOME/.local/bin/vercel	65.11.0, vercel doctor --help lists json and no-login notes
+2026-11-04T15:39:30Z	preflight	Confirmed the machine is logged out	Do not fake a token or run vercel login	vercel whoami	Logged out
+2026-11-04T15:39:40Z	preflight	src/dest rewrite fails vercel_json, source/destination clears it	Need a login-free fail then pass	/tmp/vercel-doctor-preflight	vercel_json failed then ok, login stayed failed, exit 0
+2026-11-04T15:47:00Z	preflight	src-only and dest-only still fail	Doctor names src first, dest remains a second fail	/tmp/vercel-doctor-src-only	src-only failed on dest, dest-only failed on src, both keys ok
+2026-11-04T15:48:00Z	design	Kept candidate-1 as the base and dropped public/index.html	Judge scored 30 vs 26 on reviewer surface. Doctor does not read HTML	/tmp/arena-vercel-doctor/synthesis.md	Two doctor runs and one file edit
+2026-11-04T15:50:00Z	verify	Ran doctor in the demo folder, applied both keys, restored	The README table has to match a live run	demos/2026-11-04-vercel-doctor/vercel.json	broken fail, fixed ok, restored fail
+2026-11-04T15:51:00Z	recording	Kept the 65 second take and restored the specimen	The take shows src/dest, a failed vercel_json line, the two-key rename, then vercel.json is valid with login still failed	demos/2026-11-04-vercel-doctor/recording.mp4	65.5s, vercel_json ok on the rescan, login failed
